@@ -100,7 +100,6 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
    - **Input (JSON or plain text):**  
      ```json
      {
-       "prompt": "<original prompt>",
        "text_A": "<completion A>",
        "text_B": "<completion B>"
      }
@@ -108,6 +107,6 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
    - **Output:**  
      ```json
      {
-       "judgment":" "A" | "B" "
+       "judgment":" "A" or "B" "
      }
      ```

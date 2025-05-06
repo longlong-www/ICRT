@@ -55,7 +55,12 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
    - **Input:**  
      ```json
      {
-       "sub_concepts": [ ... ],
+       "sub_concepts": [
+         "sub-concept 1",
+         "sub-concept 2",
+         "sub-concept 3",
+         "..."
+       ],
        "max_removals": M
      }
      ```  
@@ -64,11 +69,12 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
      {
        "filtered_sub_concepts": [
          "sub-concept 1",
-         "...",
-         "sub-concept P"
+         "sub-concept 3",
+         "..."
        ]
      }
      ```
+
 
 4. **Concept Reassembly**  
    - **Prompt File:** `Concept_Reassembly.txt`  

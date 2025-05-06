@@ -110,3 +110,7 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
        "judgment":"A or B"
      }
      ```
+## Display of attack results
+Due to sensitive content, only a portion will be displayed.
+As underlying LLMs continue to evolve, our approach achieves high jailbreak success rates and effectively extracts harmful content in the current version; however, future strengthening of safety mechanisms may impact its performance, so ongoing monitoring and optimization are necessary. 
+﻿![show](./image/show.png)

@@ -33,7 +33,7 @@ Follow these steps to run the ICRT jailbreak pipeline using the provided prompt 
      {
        "structural_intent": "...",
        "harmful_behavior": "...",
-       "num_sub_concepts": N
+       "num_sub_concepts": "N"
      }
      ```
 

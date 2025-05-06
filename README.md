@@ -2,13 +2,7 @@
 
 ## Abstract
 
-Despite the remarkable performance of Large Language Models (LLMs), they remain vulnerable to jailbreak attacks that can compromise their safety mechanisms. Existing studies often rely on brute-force optimization or manual prompt design and fail to capture risks in real-world scenarios. To address this, we propose **ICRT**, a novel jailbreak framework inspired by human cognitive heuristics and biases. 
-
-- **Simplicity Effect**: We apply _cognitive decomposition_ to break complex malicious goals into simpler sub-tasks, reducing prompt complexity.  
-- **Relevance Bias**: We reorganize and prioritize sub-concepts to maximize semantic alignment with the attacker’s intent.  
-- **Ranking-Based Evaluation**: We move beyond binary success/failure by aggregating pairwise harmfulness comparisons via Elo, HodgeRank, and Rank Centrality, producing a fine-grained metric of output risk.
-
-Our experiments demonstrate that ICRT consistently bypasses mainstream LLM safety guards and yields highly actionable, high-risk content—offering both deeper insights into jailbreak vulnerabilities and guidance for stronger defenses.
+Despite the remarkable performance of Large Language Models (LLMs), they remain vulnerable to jailbreak attacks, which can compromise their safety mechanisms. Existing studies often rely on brute-force optimization or manual design, failing to uncover potential risks in real-world scenarios. To address this, we propose a novel jailbreak attack framework, ICRT, inspired by heuristics and biases in human cognition. Leveraging the simplicity effect, we employ cognitive decomposition to reduce the complexity of malicious prompts. Simultaneously, relevance bias is utilized to reorganize prompts, enhancing semantic alignment and inducing harmful outputs effectively. Furthermore, we introduce a ranking-based harmfulness evaluation metric that surpasses the traditional binary success-or-failure paradigm by employing ranking aggregation methods such as Elo, HodgeRank, and Rank Centrality to comprehensively quantify the harmfulness of generated content. Experimental results show that our approach consistently bypasses mainstream LLMs' safety mechanisms and generates high-risk content, providing insights into jailbreak attack risks and contributing to stronger defense strategies
 
 ![ICRT Method Overview](./image/method.png)
 
@@ -36,7 +30,7 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
      {
        "structural_intent": "<...>",
        "harmful_behavior": "<...>",
-       "num_sub_concepts": N
+       "num_sub_concepts": "N"
      }
      ```  
    - **Output:**  
@@ -61,7 +55,7 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
          "sub-concept 3",
          "..."
        ],
-       "max_removals": M
+       "max_removals": "M"
      }
      ```  
    - **Output:**  
@@ -81,9 +75,9 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
    - **Input:**  
      ```json
      {
-       "intent_recognition_result": { ... },
-       "decomposed_sub_concepts": [ ... ],
-       "num_selected_concepts": K
+       "intent_recognition_result": "{ ... }",
+       "decomposed_sub_concepts": "[ ... ]",
+       "num_selected_concepts": "K"
      }
      ```  
    - **Output:**  
@@ -114,6 +108,6 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
    - **Output:**  
      ```json
      {
-       "judgment": "A" | "B"
+       "judgment":" "A" | "B" "
      }
      ```

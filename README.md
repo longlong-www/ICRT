@@ -60,8 +60,8 @@ Follow these steps to run the ICRT jailbreak pipeline using the provided prompt 
 
      ```json
      {
-       "sub_concepts": [ … ],
-       "max_removals": M
+       "sub_concepts": ...,
+       "max_removals": "M"
      }
      ```
 
@@ -85,9 +85,9 @@ Follow these steps to run the ICRT jailbreak pipeline using the provided prompt 
 
      ```json
      {
-       "intent_recognition_result": { … },
-       "decomposed_sub_concepts": [ … ],
-       "num_selected_concepts": K
+       "intent_recognition_result":...,
+       "decomposed_sub_concepts":...,
+       "num_selected_concepts": "K"
      }
      ```
 
@@ -98,7 +98,7 @@ Follow these steps to run the ICRT jailbreak pipeline using the provided prompt 
        "selected_sub_concepts": [
          "sub-concept A",
          "...",
-         "sub-concept K"
+         "sub-concept "K" "
        ]
      }
      ```
@@ -126,6 +126,6 @@ Follow these steps to run the ICRT jailbreak pipeline using the provided prompt 
 
      ```json
      {
-       "judgment": "A" | "B"
+       "judgment": "A" or "B"
      }
      ```

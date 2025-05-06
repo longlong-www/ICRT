@@ -4,7 +4,7 @@
 
 Despite the remarkable performance of Large Language Models (LLMs), they remain vulnerable to jailbreak attacks, which can compromise their safety mechanisms. Existing studies often rely on brute-force optimization or manual design, failing to uncover potential risks in real-world scenarios. To address this, we propose a novel jailbreak attack framework, **ICRT**, inspired by heuristics and biases in human cognition. Leveraging the _simplicity effect_, we employ _cognitive decomposition_ to reduce the complexity of malicious prompts. Simultaneously, _relevance bias_ is utilized to reorganize prompts, enhancing semantic alignment and inducing harmful outputs effectively. Furthermore, we introduce a ranking-based harmfulness evaluation metric that surpasses the traditional binary success-or-failure paradigm by employing ranking aggregation methods such as Elo, HodgeRank, and Rank Centrality to comprehensively quantify the harmfulness of generated content. Experimental results show that our approach consistently bypasses mainstream LLMs' safety mechanisms and generates high-risk content, providing insights into jailbreak attack risks and contributing to stronger defense strategies.
 
-![method](./images/method.png "method")
+![method](./image/method.png "method")
 
 
 ## Getting Started

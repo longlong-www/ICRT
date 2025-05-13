@@ -58,21 +58,7 @@ def process_match_data(data: list[tuple[str, str, int, int]]) -> tuple[np.ndarra
 
 # Match results data
 data = [
-    ("ours", "jbk", 20, 5),
-    ("ours", "deep", 15, 10),
-    ("ours", "auto", 17, 8),
-    ("ours", "art", 18, 7),
-    ("ours", "code", 19, 6),
-    ("jbk", "deep", 13, 12),
-    ("jbk", "auto", 15, 10),
-    ("jbk", "art", 20, 5),
-    ("jbk", "code", 22, 3),
-    ("deep", "auto", 13, 12),
-    ("deep", "art", 19, 6),
-    ("deep", "code", 22, 3),
-    ("auto", "art", 19, 6),
-    ("auto", "code", 21, 4),
-    ("art", "code", 19, 6),
+
 ]
 
 # Process the match data into a transition matrix

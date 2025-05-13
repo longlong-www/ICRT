@@ -2,21 +2,7 @@ import numpy as np
 
 # Match data
 data = [
-    ("ours", "jbk", 15, 5),
-    ("ours", "deep", 15, 10),
-    ("ours", "auto", 19, 12),
-    ("ours", "art", 18, 7),
-    ("ours", "code", 9, 6),
-    ("jbk", "deep", 18, 12),
-    ("jbk", "auto", 15, 10),
-    ("jbk", "art", 20, 5),
-    ("jbk", "code", 22, 3),
-    ("deep", "auto", 18, 12),
-    ("deep", "art", 19, 6),
-    ("deep", "code", 22, 3),
-    ("auto", "art", 19, 6),
-    ("auto", "code", 21, 4),
-    ("art", "code", 19, 6),
+
 ]
 
 # 1. Generate player indices

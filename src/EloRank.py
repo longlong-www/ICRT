@@ -1,11 +1,8 @@
-"""
-For simplicity, we average the results (treating 35 matches as one).
-Since the outcome of jailbreak is independent of sequence, to avoid ordering effects we accumulate updates and apply them only once at the end.
-"""
+
 import math
 
 # Define initial parameters
-methods = ["ours", "code", "deep", "art", "jbk", "auto"]
+methods = []
 initial_rating = 1500  # Initial rating for all methods
 K = 32                # ELO adjustment factor
 
@@ -15,21 +12,7 @@ print("Initial ratings:", ratings)  # Initial ratings
 
 # Input data from the match statistics
 data = [
-    ("ours", "jbk", 25, 8),
-    ("ours", "deep", 30, 8),
-    ("ours", "auto", 19, 12),
-    ("ours", "art", 18, 7),
-    ("ours", "code", 9, 6),
-    ("jbk", "deep", 18, 27),
-    ("jbk", "auto", 25, 10),
-    ("jbk", "art", 20, 5),
-    ("jbk", "code", 22, 8),
-    ("deep", "auto", 20, 23),
-    ("deep", "art", 19, 6),
-    ("deep", "code", 22, 3),
-    ("auto", "art", 19, 6),
-    ("auto", "code", 21, 4),
-    ("art", "code", 19, 6),
+
 ]
 
 # Function to calculate expected score

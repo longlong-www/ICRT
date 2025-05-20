@@ -128,17 +128,43 @@ The pairwise win-lose results of all methods in each scenario are aggregated usi
 
 
 ## Code of Rankings
+# Title
 
-### 1. ELO Rating Update Script 
+## Requirements
 
-This script calculates and updates the ELO ratings for six methods based on match results. It initializes all methods with a rating of 1500 and updates ratings after processing all matches. The ratings are adjusted based on win rates, with results accumulated and applied at the end to avoid sequence effects.
+To install requirements:
 
-### 2. HodgeRank Ranking Script 
+```setup
+pip install -r requirements.txt
+```
 
-This script calculates player rankings from match data using the HodgeRank algorithm. It builds a design matrix, computes ranking scores, and normalizes them to a [0, 1] range.
+## How to Use
 
-### 3. Spectral Ranking Algorithm
+### 1.Prepare Your Data
 
-This script computes player rankings using the Rank Centrality algorithm based on match data. It first converts match results into a win-count transition matrix, then uses eigen-decomposition to compute a probability distribution of player rankings.
+Each script expects a `config*.json` file with match data. Example:
 
-Provide match data in the format `(player1, player2, player1_wins, player2_wins)` to run the code.
+```json
+{
+  "data": [
+    ["method1", "method2", 15, 10],
+    ["method2", "method3", 12, 8]
+  ]
+}
+```
+
+- Each entry: `[playerA, playerB, winsA, winsB]`
+- For `configElo.json`, you must also include a `"methods"` list:
+  ```json
+  "methods": ["method1", "method2", "method3"]
+  ```
+
+### 2.Run Scripts
+
+```bash
+python Elo.py
+python HodgeRank.py
+python RankCentrality.py
+```
+
+Each script will print the final ranking results.

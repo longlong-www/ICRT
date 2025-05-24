@@ -90,10 +90,17 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
        ]
      }
      ```
-
+     
 5. **Jailbreak Prompt Generation**  
-   - Embed the `selected_sub_concepts` into your scenario template (e.g., role-play, hypothetical discussion).  
-   - Send the final prompt to your target LLM to obtain the jailbreak response.
+- **Prompt File:** `Evil_Scenario_Template.txt`  
+- **How to use:**  
+  1. Take your `selected_sub_concepts` array from Step 4.  
+  2. In the template, replace  
+     - `Goal: {selected_sub_concepts[0]}` with the first item,  
+     - `Additional Goal 1: {selected_sub_concepts[1]}` with the second,  
+     - …and so on through `Additional Goal K`.  
+  3. Send the filled-in prompt to your LLM.  
+```
 
 6. **Harmfulness Evaluation**  
    - **Prompt File:** `judge.txt`  

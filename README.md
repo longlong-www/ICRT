@@ -100,7 +100,6 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
      - `Additional Goal 1: {selected_sub_concepts[1]}` with the second,  
      - …and so on through `Additional Goal K`.  
   3. Send the filled-in prompt to your LLM.  
-```
 
 6. **Harmfulness Evaluation**  
    - **Prompt File:** `judge.txt`  

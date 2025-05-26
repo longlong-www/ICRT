@@ -102,7 +102,7 @@ Follow these steps to run the ICRT jailbreak pipeline using our prompt templates
   3. Send the filled-in prompt to your LLM.  
 
 6. **Harmfulness Evaluation**  
-   - **Prompt File:** `judge.txt`  
+   - **Prompt File:** `pair.txt`  
    - **Input (JSON or plain text):**  
      ```json
      {
@@ -134,7 +134,6 @@ The pairwise win-lose results of all methods in each scenario are aggregated usi
 
 
 ## Code of Rankings
-# Title
 
 ## Requirements
 

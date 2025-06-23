@@ -1,8 +1,0 @@
-{
-  "methods": ["method1", "method2", "method3", "method4"],
-  "data": [
-    ["method1", "method2", 20, 15],
-    ["method3", "method4", 18, 12],
-    ["method1", "method3", 25, 10]
-  ]
-}
